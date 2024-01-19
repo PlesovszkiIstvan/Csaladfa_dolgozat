@@ -27,7 +27,7 @@ namespace Csaladfa_dolgozat
         }
 
         private void UpdateJSON(string uri)
-        {
+        { // Próbálkoztam az Update-el de sajnos nem tudtam működésre bírni
             try
             {
                 var webRequest = (HttpWebRequest)WebRequest.Create(uri);
@@ -49,7 +49,7 @@ namespace Csaladfa_dolgozat
         private void GetRESTData(string uri)
         {
 
-            // Próbálkoztam az Update-el de sajnos nem tudtam működésre bírni
+           
             try
             {
                 var webRequest = (HttpWebRequest)WebRequest.Create(uri);
@@ -97,6 +97,7 @@ namespace Csaladfa_dolgozat
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
+
             string[] memberData = new string[7];
 
             memberData[0] = nameTextbox.Text;
